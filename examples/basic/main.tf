@@ -53,6 +53,12 @@ variable "google_client_secret" {
   sensitive   = true
 }
 
+variable "callback_urls" {
+  description = "List of callback URLs for testing"
+  type        = list(string)
+  default     = ["http://localhost:3000"]
+}
+
 # Outputs
 output "user_pool_id" {
   description = "Cognito User Pool ID"

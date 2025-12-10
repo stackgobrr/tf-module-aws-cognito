@@ -21,14 +21,14 @@ module "cognito" {
 
   google_client_id     = var.google_client_id
   google_client_secret = var.google_client_secret
-  
+
   callback_urls = [
     "https://myapp.com",
     "https://www.myapp.com"
   ]
-  
+
   domain_prefix = "myapp-auth"
-  
+
   tags = {
     Project     = "myapp"
     Environment = "production"
@@ -62,13 +62,13 @@ module "cognito" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.14.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.25.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.0 |
 
 ## Modules
 
