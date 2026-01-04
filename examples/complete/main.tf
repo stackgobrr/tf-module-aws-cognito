@@ -94,7 +94,7 @@ output "logout_url" {
 # In your h3ow3d-deployment repository main.tf:
 #
 # module "cognito" {
-#   source = "git::https://github.com/h3ow3d/h3ow3d-infra-cognito.git?ref=v1.0.0"
+#   source = "git::https://github.com/stackgobrr/tf-module-aws-cognito.git?ref=v1.0.0"
 #
 #   project_name         = var.project_name
 #   environment          = var.environment
